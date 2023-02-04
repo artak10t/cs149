@@ -1,0 +1,15 @@
+  808  ls
+  809  pwd
+  810  git init
+  811  git remote add origin https://github.com/artak10t/cs149
+  812  git config --global user.email "artak10t@gmail.com"
+  813  git config --global user.name "artak10t"
+  814  ls
+  815  mkdir WS1
+  816  cd WS1
+  817  git add .
+  818  wget -O out.pdf https://tinyurl.com/yy94jltt
+  819  ls
+  820  clear
+  821  ls -latr
+  822  history > cmds.log
