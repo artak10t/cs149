@@ -1,0 +1,11 @@
+  884  date
+  885  pwd
+  886  cd ~
+  887  cd Desktop/
+  888  ls -latr
+  889  echo $?
+  890  man ps
+  891  ps aus
+  892  ps aux
+  893  top
+  894  history > worksheet2.log
