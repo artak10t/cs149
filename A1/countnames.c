@@ -1,3 +1,10 @@
+/**
+* Description: Count repeating names from the file
+* Author Names: Spartak Gevorgyan, Shadi Abd El Majid
+* Author Emails: spartak.gevorgyan@sjsu.edu, shadi.abdelmajid@sjsu.edu
+* Last Modified Date: 2/19/2023
+* Creation Date: 2/19/2023
+**/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,6 +16,12 @@ struct NameCount
 	int count;
 };
 
+/**
+* Goes over file and finds individual names count
+* Assumption: file exists and is provided as an argument
+* Input Parameters: filename
+* Returns: list of individual names and repetitions
+**/
 int main(int argc, char **argv)
 {
 	//Verify if argument with filename is given
@@ -70,6 +83,12 @@ int main(int argc, char **argv)
 	//Output names and repetitions
 	for(int i = 0; i < individual_names; i++)
 	{
+		//Remove new line from name ends
+		for(int j = 0; j < 30; j++)
+		{
+			if(names[i].name[j] == '\n')
+				names[i].name[j] = '\0';
+		}
 		fprintf(stdout, "%s:%i\n", names[i].name, names[i].count);
 	}
 
