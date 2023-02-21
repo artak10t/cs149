@@ -1,0 +1,24 @@
+ 1005  wget https://github.com/torvalds/linux/archive/master.zip
+ 1006  clear
+ 1007  unzip master.zip
+ 1008  cd linux-master
+ 1009  ls
+ 1010  pwd
+ 1011  alias l='ls -latr'
+ 1012  l
+ 1013  unalias l
+ 1014  l
+ 1015  find . -name mem.c
+ 1016  find . -name mem.c | xargs head
+ 1017  find . -name mem.c | xargs grep 86
+ 1018  cd ..
+ 1019  history > worksheet3.log
+ 1020  cd
+ 1021  ls
+ 1022  cd Documents/
+ 1023  ls
+ 1024  cd cs149/
+ 1025  ls
+ 1026  cd A1/
+ 1027  ls
+ 1028  history > worksheet3.log
