@@ -1,0 +1,24 @@
+  999  wget http://www.apuebook.com/src.3e.tar.gz
+ 1000  gunzip src.3e.tar.gz
+ 1001  tar xvf src.3e.tar 
+ 1002  cd apue.3e/
+ 1003  cd proc
+ 1004  make all
+ 1005  ./fork1
+ 1006  ./fork2
+ 1007  cd
+ 1008  cd Documents/cs149/WS4
+ 1009  ls
+ 1010  rm -r apue.3e/ src.3e.tar 
+ 1011  ls
+ 1012  sudo rm -r apue.3e/ 
+ 1013  ls
+ 1014  pwd
+ 1015  pstree
+ 1016  ps -a -f -x
+ 1017  ps -a -f -x | more
+ 1018  top
+ 1019  man kill
+ 1020  echo $?
+ 1021  echo $$
+ 1022  history > worksheet4.log
